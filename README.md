@@ -19,7 +19,7 @@ Constraints:
 
 ## Screenshots
 
-![Home Page](images/preview.png)
+![Home Page](Assets/preview.png)
 
 
 
