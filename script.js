@@ -7,26 +7,23 @@ const successMessage = document.querySelector(".message");
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   validCC(Number(inputWindow.value));
-  //   validCC()
-  //   inputWindow.value = "";
+  setTimeout(() => {
+    if (!successMessage.classList.contains("hidden")) {
+      successModal.classList.add("hidden");
+    } else if (!warningModal.classList.contains("hidden")) {
+      warningModal.classList.add("hidden");
+    }
+  }, 3000);
+  inputWindow.value = "";
 });
 
 const displayModal = (cardType) => {
   successModal.classList.remove("hidden");
   successMessage.innerHTML = `VALID: ${cardType}`;
-  setInterval(() => {
-    successModal.classList.add("hidden");
-    successMessage.innerHTML = "";
-    inputWindow.value = "";
-  }, 3000);
 };
 
 const displayWarning = () => {
   warningModal.classList.remove("hidden");
-  setInterval(() => {
-    warningModal.classList.add("hidden");
-    inputWindow.value = "";
-  }, 3000);
 };
 
 const validCC = (digits) => {
@@ -107,5 +104,3 @@ const validCC = (digits) => {
   }
   console.log(sumTotal);
 };
-
-// validCC(340370060000714);
