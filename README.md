@@ -1,7 +1,7 @@
 <h1 align="center"> Credit Card Validator </h1>
 
 <p>
-Small web app that validates inputted credit cards for Visa, Mastercard, and AMEX.    </p>
+Small web app that validates credit cards number for Visa, Mastercard, and AMEX.    </p>
 
 Constraints:
 
@@ -26,6 +26,7 @@ Not Applicable.
 
 - HTML
 - CSS
+- JavaScript(ES6)
 
 ## Future Updates
 
